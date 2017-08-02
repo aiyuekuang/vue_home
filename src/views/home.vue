@@ -20,7 +20,7 @@ export default {
     methods: {
         dianji: function (event) {
             // `this` 在方法里指当前 Vue 实例
-            this.$router.push('today');
+            this.$router.push('neiye');
         }
     }
 }

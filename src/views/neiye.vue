@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'today',
+  name: 'neiye',
   mounted(){
         let that = this;
   },
