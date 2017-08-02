@@ -1,5 +1,2 @@
+/.vscode/
 /node_modules/
-/dist/
-/.gitignore
-/yarn.lock
-/.idea/
