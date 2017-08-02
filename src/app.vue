@@ -18,4 +18,5 @@ export default {
   components:{
   }
 }
+
 </script>
