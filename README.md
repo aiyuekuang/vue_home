@@ -6,6 +6,8 @@
 * 如果有撸友遇到其他sass相关问题的话，也可以将sass的配置更换为less，更换方法可以自行百度，或者按照sass的配置，照葫芦画瓢，实在不行可以issues给我  
 
 # 使用方法：
+    安装模块：npm install  
+    
     开发模式：npm run dev 或者 npm start  
 
     打包：npm run build
