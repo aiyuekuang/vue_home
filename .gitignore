@@ -2,3 +2,4 @@
 /dist/
 /.gitignore
 /yarn.lock
+/.idea
