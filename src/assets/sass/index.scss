@@ -1,1 +1,17 @@
 @charset "UTF-8";
+@import "./rest.scss";
+.home{
+    text-align: center;
+    @include hh(30px);
+}
+.neiye{
+    text-align: center;
+}
+.neiye_tit{
+    @include hh(40px);
+}
+.neiye_li{
+    >div{
+        padding: 10px 0;
+    }
+}

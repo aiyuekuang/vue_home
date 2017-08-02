@@ -1,10 +1,11 @@
 //about.vue
 <template>
-    <div class='content'>
-        <div class='title'>历史上的今天</div>
-        <div class='content-item' v-for='item in data'>
-            {{item.title}}
-            <img class='item-img' :src='item.img'>
+    <div class='neiye'>
+        <div class="neiye_tit">
+            {{tishi}}
+        </div>
+        <div class='neiye_li' v-for='item in data'>
+            <div>{{item}}</div>
         </div>
     </div>
 </template>
@@ -20,10 +21,8 @@ export default {
   },
   data () {
     return {
-       apiUrl:"http://route.showapi.com/119-42",
-       showapi_sign:"1688d17e4c41492daaef9e12d36dcd0d",
-       showapi_appid:"35517",
-       data:'',
+        tishi:'从主页来的吧，哈哈，点击浏览器的回退回去吧',
+       data:['哈哈','哈哈2','哈哈3','哈哈4','哈哈5','哈哈6'],
     }
   },
 }
