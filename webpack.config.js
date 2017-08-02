@@ -55,6 +55,7 @@ module.exports = {
                     // other vue-loader options go here
                 }
             },
+            { test: /iview.src.*?js$/, loader: 'babel-loader' },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',

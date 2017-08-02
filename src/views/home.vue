@@ -2,6 +2,7 @@
 <template>
     <div class='home'>
         <Tit/>
+        <Button type="info">信息按钮</Button>
     </div>
 </template>
 <script>
