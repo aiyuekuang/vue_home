@@ -4,7 +4,7 @@
 # 更新日志  [日志地址](https://github.com/aiyuekuang/vue_home/blob/master/doc/gengxin.md)
 **2017.8.15**
 新增less得loader
-新增实用小巧得esn库，方便数据处理
+新增实用小巧得esn库，方便数据处理  
 
 # 注意的情况：
 * 如果在build或者start的时候出现node-sass之类的报错，可以使用  npm rebuild node-sass来处理下，再build或start，这个问题属于插件本身的问题，我没有去自习研究，有了解的同学可以issues告诉我。
