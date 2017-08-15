@@ -1,9 +1,10 @@
 # vue_home
 这是一个vue的脚手架项目，其中包含着当前最新得脚手架配置方式，技术技术栈包括vue+vuex+vue-router+iview+sass+webpack3+esn，我会长期，并定期维护这个脚手架，将当下vue生态圈最新技术运用进去,适用于新手或者关注进阶的朋友学习参考。（广大撸友觉得能用上的，也不要吝啬自己的star哦）  
 
-# 更新日志  [日志地址](https://github.com/aiyuekuang/vue_home/blob/master/doc/gengxin.md)
-**2017.8.15**
-新增less得loader
+# 更新日志  
+**2017.8.15**  [日志地址](https://github.com/aiyuekuang/vue_home/blob/master/doc/gengxin.md)
+新增less得loader  
+
 新增实用小巧得esn库，方便数据处理  
 
 # 注意的情况：
