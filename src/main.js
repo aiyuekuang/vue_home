@@ -5,6 +5,8 @@ import router from './router.js'
 import VueResource from 'vue-resource'
 import iView from 'iview';
 import 'assets/sass/index.scss'
+import 'assets/less/common.less'
+
 Vue.config.debug = true; // 开启错误提示
 Vue.use(VueResource)
 Vue.use(iView);
