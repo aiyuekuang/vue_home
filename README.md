@@ -9,8 +9,8 @@
 新增实用小巧得esn库，方便数据处理  
 
 # 注意的情况：
-* 如果在build或者start的时候出现node-sass之类的报错，可以使用  npm rebuild node-sass来处理下，再build或start，这个问题属于插件本身的问题，我没有去自习研究，有了解的同学可以issues告诉我。
-* 如果有撸友遇到其他sass相关问题的话，也可以将sass的配置更换为less，更换方法可以自行百度，或者按照sass的配置，照葫芦画瓢，实在不行可以issues给我  
+* 如果在build或者start的时候出现node-sass之类的报错，可以使用  npm rebuild node-sass来处理下，再build或start，有了解的同学可以issues告诉我。
+* 如果有撸友遇到其他sass相关问题的话，也可以将sass的配置更换为less，本项目已配置less加载器  
 
 # 使用方法：
     安装模块：npm install  
