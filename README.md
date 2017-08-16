@@ -10,7 +10,8 @@
 
 # 注意的情况：
 * 如果在build或者start的时候出现node-sass之类的报错，可以使用  npm rebuild node-sass来处理下，再build或start，有了解的同学可以issues告诉我。
-* 如果有撸友遇到其他sass相关问题的话，也可以将sass的配置更换为less，本项目已配置less加载器  
+* 如果有撸友遇到其他sass相关问题的话，也可以将sass的配置更换为less，本项目已配置less加载器 
+* 朋友们有一些对本项目得一键建议，或者想法欢迎issues，本人将持续改进
 
 # 使用方法：
     安装模块：npm install  

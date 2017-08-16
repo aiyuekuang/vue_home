@@ -3,3 +3,4 @@
 /.gitignore
 /yarn.lock
 /.idea/
+/npm-debug.log
