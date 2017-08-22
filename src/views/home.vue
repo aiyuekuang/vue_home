@@ -14,13 +14,13 @@
 <script>
     import Tit from '../components/tit.vue';
     import {str_cut} from 'esn';
+
     export default {
         name: 'home',
         components: {
             Tit
         },
         created(){
-            //用vuex设置状态，改变class;
 
         },
         methods: {

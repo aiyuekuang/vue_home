@@ -108,10 +108,19 @@ module.exports = {
             path.join(__dirname, './src')
         ]
     },
-    devServer: {//webpack-dev-server配置
+    devServer: {//webpack-dev-server配置热更新以及跨域
         historyApiFallback: true,//不跳转
         noInfo: true,
-        inline: true//实时刷新
+        inline: true,//实时刷新
+        port: '5000',
+        proxy: {
+            '/list': {
+                target: 'http://lol.qq.com/web201310/js/videodata/LOL_VIDEOLIST_IDX3.js',
+                pathRewrite: {'^/list': ''},
+                changeOrigin: true,
+                secure: false
+            }
+        }
     },
     devtool: false
 }

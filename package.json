@@ -6,17 +6,17 @@
   "scripts": {
     "clean": "rd /s/q dist && mkdir dist",
     "start": "npm run dev",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --port 5000",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "build": "npm run clean &&set NODE_ENV=production&& webpack"
   },
   "author": "ztao",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
+    "esn": "^1.0.2",
     "iview": "^2.0.0",
     "vue": "^2.2.4",
-    "vue-resource": "^1.2.1",
-    "vuex": "^2.2.1",
-    "esn": "^1.0.2"
+    "vuex": "^2.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -39,6 +39,6 @@
     "vue-router": "^2.3.0",
     "vue-template-compiler": "^2.2.4",
     "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.7.1"
   }
 }
