@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="<%= htmlWebpackPlugin.options.url %>favicon.png" type="image/x-icon">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <% htmlWebpackPlugin.options.dns.forEach(function(item){ %>
+        <link rel="dns-prefetch" href="//<%= item %>">
+    <% }) %>
+    <style>
+        .loader_warp{
+            display: flex;
+            height: 100vh;
+        }
+        .loader_warp >div{
+            margin: auto;
+        }
+    </style>
+    <style type="text/css">
+        @-moz-keyframes loading {
+            0%, 100% {
+                -moz-transform: scale(1) rotateZ(0deg);
+                transform: scale(1) rotateZ(0deg);
+                opacity: 1;
+            }
+
+            26% {
+                -moz-transform: scale(1.1) rotateZ(12deg);
+                transform: scale(1.1) rotateZ(12deg);
+                opacity: .2;
+            }
+
+            76% {
+                -moz-transform: scale(0.8) rotateZ(-8deg);
+                transform: scale(0.8) rotateZ(-8deg);
+                opacity: .6;
+            }
+        }
+        @-webkit-keyframes loading {
+            0%, 100% {
+                -webkit-transform: scale(1) rotateZ(0deg);
+                transform: scale(1) rotateZ(0deg);
+                opacity: 1;
+            }
+
+            26% {
+                -webkit-transform: scale(1.1) rotateZ(12deg);
+                transform: scale(1.1) rotateZ(12deg);
+                opacity: .2;
+            }
+
+            76% {
+                -webkit-transform: scale(0.8) rotateZ(-8deg);
+                transform: scale(0.8) rotateZ(-8deg);
+                opacity: .6;
+            }
+        }
+        @keyframes loading {
+            0%, 100% {
+                -moz-transform: scale(1) rotateZ(0deg);
+                -ms-transform: scale(1) rotateZ(0deg);
+                -webkit-transform: scale(1) rotateZ(0deg);
+                transform: scale(1) rotateZ(0deg);
+                opacity: 1;
+            }
+
+            26% {
+                -moz-transform: scale(1.1) rotateZ(12deg);
+                -ms-transform: scale(1.1) rotateZ(12deg);
+                -webkit-transform: scale(1.1) rotateZ(12deg);
+                transform: scale(1.1) rotateZ(12deg);
+                opacity: .2;
+            }
+
+            76% {
+                -moz-transform: scale(0.8) rotateZ(-8deg);
+                -ms-transform: scale(0.8) rotateZ(-8deg);
+                -webkit-transform: scale(0.8) rotateZ(-8deg);
+                transform: scale(0.8) rotateZ(-8deg);
+                opacity: .6;
+            }
+        }
+        .loader {
+            overflow: hidden;
+            font-size: 45px;
+        }
+        .loader span {
+            -moz-animation: loading 1s linear infinite -0.8s;
+            -webkit-animation: loading 1s linear infinite -0.8s;
+            animation: loading 1s linear infinite -0.8s;
+            float: left;
+        }
+        .loader .span2 {
+            -moz-animation: loading 1s linear infinite -0.2s;
+            -webkit-animation: loading 1s linear infinite -0.2s;
+            animation: loading 1s linear infinite -0.2s;
+        }
+        .loader .span3 {
+            -moz-animation: loading 1s linear infinite -0.5s;
+            -webkit-animation: loading 1s linear infinite -0.5s;
+            animation: loading 1s linear infinite -0.5s;
+        }
+        .loader .span4 {
+            -moz-animation: loading 1s linear infinite -1.1s;
+            -webkit-animation: loading 1s linear infinite -1.1s;
+            animation: loading 1s linear infinite -1.1s;
+        }
+        .loader .span5 {
+            -moz-animation: loading 1s linear infinite -0.36s;
+            -webkit-animation: loading 1s linear infinite -0.36s;
+            animation: loading 1s linear infinite -0.36s;
+        }
+        .loader .span6 {
+            -moz-animation: loading 1s linear infinite -0.65s;
+            -webkit-animation: loading 1s linear infinite -0.65s;
+            animation: loading 1s linear infinite -0.65s;
+        }
+        .loader .span7 {
+            -moz-animation: loading 1s linear infinite -0.93s;
+            -webkit-animation: loading 1s linear infinite -0.93s;
+            animation: loading 1s linear infinite -0.93s;
+        }
+
+        .font4 {
+            font-family: "Comic Sans MS", sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="loader_warp">
+        <div class="loader font4">
+            <span>L</span>
+            <span class="span2">O</span>
+            <span class="span3">A</span>
+            <span class="span4">D</span>
+            <span class="span5">I</span>
+            <span class="span6">N</span>
+            <span class="span7">G</span>
+        </div>
+    </div>
+</div>
+<% if (htmlWebpackPlugin.options.pro) { %>
+    <script src='<%= htmlWebpackPlugin.options.url %>Dll.js'></script>
+<% } %>
+</body>
+</html>
